@@ -6,6 +6,7 @@ import Privacy from '../views/Privacy.vue'
 import Blog from '../views/Blog.vue'
 import Login from '../views/Login.vue'
 import SignUp from '../views/SignUp.vue'
+import BlogPage from '../views/BlogPage.vue'
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,11 @@ const routes = [
     path: '/SignUp',
     name: 'SignUp',
     component: SignUp
+  },
+  {
+    path: '/BlogPage',
+    name: 'BlogPage',
+    component: BlogPage
   },
 ]
 
