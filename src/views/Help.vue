@@ -3,13 +3,12 @@
         <v-container>
             <v-layout row wrap>
             <v-flex xs12 sm6 md6 order-md2 order-sm2>
-                <v-card dark tile flat color="blue">
-                <v-card-text>#1</v-card-text>
-                <v-card-text>{{ lorem }}</v-card-text>
+                <v-card class="ma-4">
+                <v-img src="https://picsum.photos/510/300?random" aspect-ratio="1.4"></v-img>
                 </v-card>
             </v-flex>
             <v-flex xs12 sm6 md6 order-md1 order-sm1>
-                <v-card dark tile flat color="black">
+                <v-card tile flat color="" class="move">
                 <v-card-text>#2</v-card-text>
                 <v-card-text>{{ lorem }}</v-card-text>
                 </v-card>
@@ -17,16 +16,17 @@
             </v-layout>
         </v-container>
 
-        <v-container>
+        <v-container class="move">
             <v-layout row wrap>
-            <v-flex xs12 sm6 md6 order-md1 order-sm2>
-                <v-card dark tile flat color="blue">
-                <v-card-text>#1</v-card-text>
-                <v-card-text>{{ lorem }}</v-card-text>
+            <v-flex xs12 sm6 md6 order-md1 order-sm1>
+                <v-card tile flat color="">
+                <v-card class="ma-4">
+                <v-img src="https://picsum.photos/510/300?random" aspect-ratio="1.4"></v-img>
+                </v-card>
                 </v-card>
             </v-flex>
-            <v-flex xs12 sm6 md6 order-md2 order-sm1>
-                <v-card dark tile flat color="black">
+            <v-flex xs12 sm6 md6 order-md2 order-sm2>
+                <v-card tile flat color="">
                 <v-card-text>#2</v-card-text>
                 <v-card-text>{{ lorem }}</v-card-text>
                 </v-card>
@@ -42,3 +42,7 @@ export default {
     })
 }
 </script>
+
+<style scoped>
+
+</style>

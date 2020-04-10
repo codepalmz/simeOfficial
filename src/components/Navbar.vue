@@ -1,19 +1,5 @@
 <template>
     <div class="nav">
-        <!-- <div class="text-center"> -->
-            
-            
-            <!-- <v-spacer></v-spacer>
-        <div>
-            <v-btn text class="text-left gray" to="/">Damilola</v-btn>
-
-            <v-btn text class="text-right gray" to="/help">HELP</v-btn>
-            <v-btn text class="gray" to="/privacy">PRIVACY</v-btn>
-            <v-btn text class="gray" to="/blog">Blog</v-btn>
-            <v-btn text class="gray" to="/login">Login</v-btn>
-            <v-btn rounded dark to="/SignUp">CREATE ACCOUNT</v-btn>
-        </div> -->
-
         <v-container>
             <v-toolbar dense flat>
             <!-- <v-spacer></v-spacer> -->
