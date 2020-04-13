@@ -22,27 +22,27 @@ const routes = [
     component: Help
   },
   {
-    path: '/Privacy',
+    path: '/privacy',
     name: 'Privacy',
     component: Privacy
   },
   {
-    path: '/Blog',
+    path: '/blog',
     name: 'Blog',
     component: Blog
   },
   {
-    path: '/Login',
+    path: '/login',
     name: 'Login',
     component: Login
   },
   {
-    path: '/SignUp',
+    path: '/signup',
     name: 'SignUp',
     component: SignUp
   },
   {
-    path: '/BlogPage',
+    path: '/blogpage',
     name: 'BlogPage',
     component: BlogPage
   },

@@ -20,7 +20,7 @@
                 </v-flex>
                 <v-flex xs6>
                     <v-card tile flat color="#f4f7f6" align="end">
-                        <a href="/Login" class="createBtn">Login</a>
+                        <a href="/login" class="createBtn">Login</a>
                     </v-card>
                 </v-flex>
                 </v-layout>
