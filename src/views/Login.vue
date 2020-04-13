@@ -19,8 +19,8 @@
                     </v-card>
                 </v-flex>
                 <v-flex xs6>
-                    <v-card tile flat color="#f4f7f6" align="end">
-                        <a href="/signup" class="createBtn">Create an account</a>
+                    <v-card tile flat class="" color="#f4f7f6" align="end">
+                        <v-btn class="nav-item nav-link createBtn" rounded text to="/signup">CREATE ACCOUNT</v-btn>
                     </v-card>
                 </v-flex>
                 </v-layout>
