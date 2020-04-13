@@ -8,12 +8,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav subLinks">
-                        <v-btn text to="/help">HELP</v-btn>
-                    <a class="nav-item nav-link" href="/help">HELP</a>
+                        <v-btn class="nav-item nav-link" text to="/help">HELP</v-btn>
+                        <v-btn class="nav-item nav-link" text to="/privacy">PRIVACY</v-btn>
+                        <v-btn class="nav-item nav-link" text to="/blog">Blog</v-btn>
+                        <v-btn class="nav-item nav-link" text to="/login">Login</v-btn>
+                        <v-btn class="nav-item nav-link" rounded text to="/SignUp">CREATE ACCOUNT</v-btn>
+                    <!-- <a class="nav-item nav-link" href="/help">HELP</a>
                     <a class="nav-item nav-link" href="/privacy">PRIVACY</a>
                     <a class="nav-item nav-link" href="/blog">Blog</a>
                     <a class="nav-item nav-link" href="/login">Login</a>
-                    <a class="nav-item nav-link" href="/SignUp">CREATE ACCOUNT</a>
+                    <a class="nav-item nav-link" href="/SignUp">CREATE ACCOUNT</a> -->
                     </div>
                 </div>
             </nav>
