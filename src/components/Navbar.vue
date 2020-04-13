@@ -8,11 +8,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav subLinks">
-                    <a class="nav-item nav-link" href="/help">HELP</a>
-                    <a class="nav-item nav-link" href="/privacy">PRIVACY</a>
-                    <a class="nav-item nav-link" href="/blog">Blog</a>
-                    <a class="nav-item nav-link" href="/login">Login</a>
-                    <a class="nav-item nav-link" href="/SignUp">CREATE ACCOUNT</a>
+                    <a class="nav-item nav-link" href="../views/help">HELP</a>
+                    <a class="nav-item nav-link" href="../views/privacy">PRIVACY</a>
+                    <a class="nav-item nav-link" href="../views/blog">Blog</a>
+                    <a class="nav-item nav-link" href="../views/login">Login</a>
+                    <a class="nav-item nav-link" href="../views/SignUp">CREATE ACCOUNT</a>
                     </div>
                 </div>
             </nav>
