@@ -1,22 +1,22 @@
 <template>
     <div class="nav">
         <v-container>
-            <v-toolbar dense flat>
-            <!-- <v-spacer></v-spacer> -->
-            <v-toolbar-title>
-                    <v-btn text to="/">SIME</v-btn>
-                </v-toolbar-title>
-
-                <v-spacer></v-spacer>
-
-            <v-btn text class="text-right gray" to="/help">HELP</v-btn>
-            <v-btn text class="gray" to="/privacy">PRIVACY</v-btn>
-            <v-btn text class="gray" to="/blog">Blog</v-btn>
-            <v-btn text class="gray" to="/login">Login</v-btn>
-            <v-btn rounded dark to="/SignUp">CREATE ACCOUNT</v-btn>
-            </v-toolbar>
+            <nav class="navbar  navbar-expand-sm navbar-light">
+                <a href="/" class="LogoBtn">SIME</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav subLinks">
+                    <a class="nav-item nav-link" href="/help">HELP</a>
+                    <a class="nav-item nav-link" href="/privacy">PRIVACY</a>
+                    <a class="nav-item nav-link" href="/blog">Blog</a>
+                    <a class="nav-item nav-link" href="/login">Login</a>
+                    <a class="nav-item nav-link" href="/SignUp">CREATE ACCOUNT</a>
+                    </div>
+                </div>
+            </nav>
         </v-container>
-        
     </div>
 </template>
 
@@ -27,29 +27,16 @@ export default {
 </script>
 
 <style scoped>
-/* .v-btn:hover:before,
-.v-btn:focus:before{
+a{
     color: black;
-    background: white;
 }
-.v-btn:active,
-.v-btn:focus{
-    outline: none;
-} */
-/* .gray{
-    color: #80809F;
-    background-color: white;
-} */
-/* .gray::before{
-    color: #80809F; */
-    /* color: transparent; */
-/* } */
-/* .gray:hover{
+.LogoBtn a{
+    font-size: 30px;
+    font-weight: bold;
+    color: #636463;
+    text-decoration: none;
+}
+.subLinks a{
     color: black;
-    background: none;
-    border-color: none;
-} */
-/* .gray:hover:before{
-    color: red;
-} */
+}
 </style>
