@@ -12,7 +12,7 @@
                         <v-btn class="nav-item nav-link" text to="/privacy">PRIVACY</v-btn>
                         <v-btn class="nav-item nav-link" text to="/blog">Blog</v-btn>
                         <v-btn class="nav-item nav-link" text to="/login">Login</v-btn>
-                        <v-btn class="nav-item nav-link" rounded text to="/SignUp">CREATE ACCOUNT</v-btn>
+                        <v-btn class="nav-item nav-link" rounded text to="/signup">CREATE ACCOUNT</v-btn>
                     <!-- <a class="nav-item nav-link" href="/help">HELP</a>
                     <a class="nav-item nav-link" href="/privacy">PRIVACY</a>
                     <a class="nav-item nav-link" href="/blog">Blog</a>
