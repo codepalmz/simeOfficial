@@ -4,12 +4,12 @@
             <v-toolbar dense flat>
             <!-- <v-spacer></v-spacer> -->
             <v-toolbar-title>
-                    <v-btn text to="/">Damilola</v-btn>
+                    <v-btn text to="/">SIME</v-btn>
                 </v-toolbar-title>
 
                 <v-spacer></v-spacer>
 
-                <v-btn text class="text-right gray" to="/help">HELP</v-btn>
+            <v-btn text class="text-right gray" to="/help">HELP</v-btn>
             <v-btn text class="gray" to="/privacy">PRIVACY</v-btn>
             <v-btn text class="gray" to="/blog">Blog</v-btn>
             <v-btn text class="gray" to="/login">Login</v-btn>

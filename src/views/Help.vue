@@ -1,48 +1,99 @@
 <template>
-    <div>
+    <div class="help">
         <v-container>
-            <v-layout row wrap>
-            <v-flex xs12 sm6 md6 order-md2 order-sm2>
-                <v-card class="ma-4">
-                <v-img src="https://picsum.photos/510/300?random" aspect-ratio="1.4"></v-img>
-                </v-card>
-            </v-flex>
-            <v-flex xs12 sm6 md6 order-md1 order-sm1>
-                <v-card tile flat color="" class="move">
-                <v-card-text>#2</v-card-text>
-                <v-card-text>{{ lorem }}</v-card-text>
-                </v-card>
-            </v-flex>
-            </v-layout>
-        </v-container>
-
-        <v-container class="move">
-            <v-layout row wrap>
-            <v-flex xs12 sm6 md6 order-md1 order-sm1>
-                <v-card tile flat color="">
-                <v-card class="ma-4">
-                <v-img src="https://picsum.photos/510/300?random" aspect-ratio="1.4"></v-img>
-                </v-card>
-                </v-card>
-            </v-flex>
-            <v-flex xs12 sm6 md6 order-md2 order-sm2>
-                <v-card tile flat color="">
-                <v-card-text>#2</v-card-text>
-                <v-card-text>{{ lorem }}</v-card-text>
-                </v-card>
-            </v-flex>
-            </v-layout>
+            <v-layout justify-center column>
+    <v-subheader>Today</v-subheader>
+    <v-expansion-panel popout>
+      <v-expansion-panel-content
+        v-for="(message, i) in messages"
+        :key="i"
+        hide-actions
+      >
+        <v-layout slot="header" align-center row spacer>
+          <v-flex xs4 sm2 md1>
+            <v-avatar
+              slot="activator"
+              size="36px"
+            >
+              <img
+                v-if="message.avatar"
+                src="https://avatars0.githubusercontent.com/u/9064066?v=4&s=460"
+                alt=""
+              >
+              <v-icon v-else :color="message.color">{{ message.icon }}</v-icon>
+            </v-avatar>
+          </v-flex>
+          <v-flex sm5 md3 hidden-xs-only>
+            <strong v-html="message.name"></strong>
+            <span v-if="message.total" class="grey--text">&nbsp;({{ message.total }})</span>
+          </v-flex>
+          <v-flex no-wrap xs5 sm3>
+            <v-chip
+              v-if="message.new"
+              :color="`${message.color} lighten-4`"
+              label
+              small
+              class="ml-0"
+            >{{ message.new }} new</v-chip>
+            <strong v-html="message.title"></strong>
+          </v-flex>
+          <v-flex
+            v-if="message.excerpt"
+            class="grey--text"
+            ellipsis
+            hidden-sm-and-down
+          >
+            &mdash;
+            {{ message.excerpt }}
+          </v-flex>
+        </v-layout>
+        <v-card>
+          <v-divider></v-divider>
+          <v-card-text v-text="lorem"></v-card-text>
+        </v-card>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+  </v-layout>
         </v-container>
     </div>
 </template>
+
+
 <script>
-export default {
+  export default {
     data: () => ({
-      lorem: `Lorem ipsum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alienum argumentum ius ad. Pri eu justo aeque torquatos.`
+      messages: [
+        {
+          avatar: 'https://avatars0.githubusercontent.com/u/9064066?v=4&s=460',
+          name: 'John Leider',
+          title: 'Welcome to Vuetify.js!',
+          excerpt: 'Thank you for joining our community...'
+        },
+        {
+          color: 'red',
+          icon: 'people',
+          name: 'Social',
+          new: 1,
+          total: 3,
+          title: 'Twitter'
+        },
+        {
+          color: 'teal',
+          icon: 'local_offer',
+          name: 'Promos',
+          new: 2,
+          total: 4,
+          title: 'Shop your way',
+          exceprt: 'New deals available, Join Today'
+        }
+      ],
+      lorem: 'Lorem ipsum dolor sit amet, at aliquam vivendum vel, everti delicatissimi cu eos. Dico iuvaret debitis mel an, et cum zril menandri. Eum in consul legimus accusam. Ea dico abhorreant duo, quo illum minimum incorrupte no, nostro voluptaria sea eu. Suas eligendi ius at, at nemore equidem est. Sed in error hendrerit, in consul constituam cum.'
     })
-}
+  }
 </script>
 
 <style scoped>
-
+.help{
+    color: black;
+}
 </style>
