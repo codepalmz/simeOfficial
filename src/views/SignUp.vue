@@ -89,7 +89,7 @@
                         <!-- <v-btn text class="ml-n9 mt-n1 resetBtn">Reset Now</v-btn>     -->
                     </v-card-text>
                     <v-card-text class="mt-n5 termsCond">
-                        <span>By using Wiza you agree to our <a href="#">Terms of services</a> and <a href="#">Privacy policy</a></span>
+                        <span>By using Sime you agree to our <a href="#">Terms of services</a> and <a href="#">Privacy policy</a></span>
                     </v-card-text>
                     </v-card>
                 </v-flex>

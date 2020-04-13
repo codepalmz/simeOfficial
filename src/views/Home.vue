@@ -1,6 +1,20 @@
 <template>
   <div class="home">
     <v-container>
+      <div class="jumbotron myJumbo mt-n6 px-8 py-12 my-n9">
+        <h1 class="display-1 text-center">Create email lists from LinkedIn</h1>
+        <p class="text-center lead text-break">
+          Wiza is magic. Turn any LinkedIn Sales Navigator search into a clean list of verified emails, ready for outreach.  <br/>
+          <v-btn rounded color="#F7E1D0" class="mt-3">Get Started</v-btn>
+        </p>
+        <p class="text-center">Sign up today and export <strong>20 emails for free!</strong></p>
+        
+      </div>
+    </v-container>
+
+    <v-spacer></v-spacer>
+
+    <v-container>
             <v-layout row wrap>
             <v-flex xs12 sm6 md6 order-md2 order-sm2>
                 <v-card class="ma-4">
@@ -50,7 +64,7 @@ export default {
 </script>
 
 <style scoped>
-.home{
-  /* background:black; */
+.myJumbo{
+  background: white;
 }
 </style>
