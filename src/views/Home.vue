@@ -23,7 +23,7 @@
             </v-flex>
             <v-flex xs12 sm6 md6 order-md1 order-sm1>
                 <v-card tile flat color="" class="move">
-                <v-card-text>#2</v-card-text>
+                
                 <v-card-text>{{ lorem }}</v-card-text>
                 </v-card>
             </v-flex>
@@ -41,7 +41,7 @@
             </v-flex>
             <v-flex xs12 sm6 md6 order-md2 order-sm2>
                 <v-card tile flat color="">
-                <v-card-text>#2</v-card-text>
+                
                 <v-card-text>{{ lorem }}</v-card-text>
                 </v-card>
             </v-flex>
